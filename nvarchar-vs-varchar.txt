@@ -1,0 +1,7 @@
+nvarchar and varchar. They both accept letters, numbers, and characters. The difference is nvarchar accepts unicode data and varchar only accepts ASCII data.  The best way to explain unicode data is other language characters or symbols.
+
+More notes:
+
+The Customers table and ShippingInfo table have a relationship that is considered one-to-many.  This means that one customer could have many rows in the ShippingInfo table.  So there needs to be a PK in the ShippingInfo table so each row is unique.  It is then connected to the Customers table with the FK (which is the PK in the Customers table).
+
+The Customer table and Demographics table have a relationship that is considered one-to-one.  This means that one customer can have only one row in the Demographics table.  So there doesn't need to be a separate PK column since there is only one for each Customer.  That is why the CustDemoID is the same data type and length (same data) in both tables.

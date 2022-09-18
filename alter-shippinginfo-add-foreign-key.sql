@@ -1,0 +1,3 @@
+ALTER TABLE ShippingInfo
+ADD FOREIGN KEY (CustID)
+REFERENCES Customers (CustomerID)
